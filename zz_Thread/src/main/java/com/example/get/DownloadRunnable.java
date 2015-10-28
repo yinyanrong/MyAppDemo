@@ -21,6 +21,8 @@ public class DownloadRunnable implements Runnable {
 		mId = id;
 	}
 
+
+	
 	@Override
 	public void run() {
 		boolean retry = mMission.recovered;
@@ -79,7 +81,7 @@ public class DownloadRunnable implements Runnable {
 			HttpURLConnection conn = null;
 
 			int total = 0;
-		
+
 			try {
 				URL url = new URL(mMission.url);
 				conn = (HttpURLConnection) url.openConnection();
