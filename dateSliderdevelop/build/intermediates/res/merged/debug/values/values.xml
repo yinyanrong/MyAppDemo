@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScrollLayout"><attr format="string" name="labelerClass"/><attr format="string" name="labelerFormat"/><attr format="dimension" name="childWidth"/><attr format="dimension" name="childHeight"/></declare-styleable>
+    <!-- From: file:/E:/DemoPlace/MyApplication/dateSliderdevelop/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">DateSlider v1 Demo</string>
+    <string name="dateSliderTitle">Selected date</string>
+    <!-- From: file:/E:/DemoPlace/MyApplication/dateSliderdevelop/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Scroller">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/slider_back</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+</resources>

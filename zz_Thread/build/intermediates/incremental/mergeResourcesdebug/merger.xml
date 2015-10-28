@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="19.1.0"><source path="E:\DemoPlace\MyApplication\zz_Thread\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\19.1.0\res"><file path="E:\DemoPlace\MyApplication\zz_Thread\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\19.1.0\res\values\values.xml" qualifiers=""><dimen name="default_gap">16dip</dimen><declare-styleable name="GridLayout">
+
+        <!--
+              support versions. All attributes not present in ViewGroup/View are
+              redefined in the support library namespace.
+        -->
+
+
+        <!--
+        The orientation property is not used during layout. It is only used to
+        allocate row and column parameters when they are not specified by its children's
+        layout parameters. GridLayout works like LinearLayout in this case;
+        putting all the components either in a single row or in a single column -
+        depending on the value of this flag. In the horizontal case, a columnCount
+        property may be additionally supplied to force new rows to be created when a
+        row is full. The rowCount attribute may be used similarly in the vertical case.
+        The default is horizontal.
+        -->
+        <attr name="orientation">
+
+            <!-- Defines an horizontal widget. -->
+            <enum name="horizontal" value="0"/>
+            <!-- Defines a vertical widget. -->
+            <enum name="vertical" value="1"/>
+        </attr>
+        <!-- The maximum number of rows to create when automatically positioning children. -->
+        <attr format="integer" name="rowCount"/>
+        <!-- The maximum number of columns to create when automatically positioning children. -->
+        <attr format="integer" name="columnCount"/>
+        <!--
+        When set to true, tells GridLayout to use default margins when none are specified
+        in a view's layout parameters.
+        The default value is false.
+        See {@link android.widget.GridLayout#setUseDefaultMargins(boolean)}.
+        -->
+        <attr format="boolean" name="useDefaultMargins"/>
+        <!--
+        When set to alignMargins, causes alignment to take place between the outer
+        boundary of a view, as defined by its margins. When set to alignBounds,
+        causes alignment to take place between the edges of the view.
+        The default is alignMargins.
+        See {@link android.widget.GridLayout#setAlignmentMode(int)}.
+        -->
+        <attr name="alignmentMode">
+
+            <!--
+            Align the bounds of the children.
+            See {@link android.widget.GridLayout#ALIGN_BOUNDS}.
+            -->
+            <enum name="alignBounds" value="0"/>
+            <!--
+            Align the margins of the children.
+            See {@link android.widget.GridLayout#ALIGN_MARGINS}.
+            -->
+            <enum name="alignMargins" value="1"/>
+        </attr>
+        <!--
+        When set to true, forces row boundaries to appear in the same order
+        as row indices.
+        The default is true.
+        See {@link android.widget.GridLayout#setRowOrderPreserved(boolean)}.
+        -->
+        <attr format="boolean" name="rowOrderPreserved"/>
+        <!--
+        When set to true, forces column boundaries to appear in the same order
+        as column indices.
+        The default is true.
+        See {@link android.widget.GridLayout#setColumnOrderPreserved(boolean)}.
+        -->
+        <attr format="boolean" name="columnOrderPreserved"/>
+    </declare-styleable><declare-styleable name="GridLayout_Layout">
+
+        <!--
+              support versions. All attributes not present in MarginLayout are
+              redefined in the support library name space.
+        -->
+
+
+        <!-- START MarginLayout layoutparams -->
+
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <!--
+              Specifies extra space on the left, top, right and bottom
+              sides of this view. This space is outside this view's bounds.
+        -->
+        <attr name="android:layout_margin"/>
+        <!--
+              Specifies extra space on the left side of this view.
+              This space is outside this view's bounds.
+        -->
+        <attr name="android:layout_marginLeft"/>
+        <!--
+              Specifies extra space on the top side of this view.
+              This space is outside this view's bounds.
+        -->
+        <attr name="android:layout_marginTop"/>
+        <!--
+              Specifies extra space on the right side of this view.
+              This space is outside this view's bounds.
+        -->
+        <attr name="android:layout_marginRight"/>
+        <!--
+              Specifies extra space on the bottom side of this view.
+              This space is outside this view's bounds.
+        -->
+        <attr name="android:layout_marginBottom"/>
+
+        <!-- END MarginLayout layoutparams -->
+
+
+        <!--
+        The row boundary delimiting the top of the group of cells
+        occupied by this view.
+        -->
+        <attr format="integer" name="layout_row"/>
+        <!--
+        The row span: the difference between the bottom and top
+        boundaries delimiting the group of cells occupied by this view.
+        The default is one.
+        See {@link android.widget.GridLayout.Spec}.
+        -->
+        <attr format="integer" min="1" name="layout_rowSpan"/>
+        <!--
+        The column boundary delimiting the left of the group of cells
+        occupied by this view.
+        -->
+        <attr format="integer" name="layout_column"/>
+        <!--
+        The column span: the difference between the right and left
+        boundaries delimiting the group of cells occupied by this view.
+        The default is one.
+        See {@link android.widget.GridLayout.Spec}.
+        -->
+        <attr format="integer" min="1" name="layout_columnSpan"/>
+        <!--
+        Gravity specifies how a component should be placed in its group of cells.
+        The default is LEFT | BASELINE.
+        See {@link android.widget.GridLayout.LayoutParams#setGravity(int)}.
+        -->
+        <attr name="layout_gravity">
+
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30"/>
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50"/>
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03"/>
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05"/>
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10"/>
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill_vertical" value="0x70"/>
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01"/>
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+            <flag name="fill_horizontal" value="0x07"/>
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            <flag name="center" value="0x11"/>
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill" value="0x77"/>
+            <!--
+             Additional option that can be set to have the top and/or bottom edges of
+             the child clipped to its container's bounds.
+             The clip will be based on the vertical gravity: a top gravity will clip the bottom
+             edge, a bottom gravity will clip the top edge, and neither will clip both edges.
+            -->
+            <flag name="clip_vertical" value="0x80"/>
+            <!--
+             Additional option that can be set to have the left and/or right edges of
+             the child clipped to its container's bounds.
+             The clip will be based on the horizontal gravity: a left gravity will clip the right
+             edge, a right gravity will clip the left edge, and neither will clip both edges.
+            -->
+            <flag name="clip_horizontal" value="0x08"/>
+            <!-- Push object to the beginning of its container, not changing its size. -->
+            <flag name="start" value="0x00800003"/>
+            <!-- Push object to the end of its container, not changing its size. -->
+            <flag name="end" value="0x00800005"/>
+        </attr>
+    </declare-styleable></file></source></dataSet><dataSet config="main"><source path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res"><file name="action_shadow" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable\action_shadow.xml" qualifiers="" type="drawable"/><file name="progress" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable\progress.xml" qualifiers="" type="drawable"/><file name="drawer_shadow" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-hdpi\drawer_shadow.9.png" qualifiers="hdpi" type="drawable"/><file name="grid" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-hdpi\grid.png" qualifiers="hdpi" type="drawable"/><file name="ic_add_white_24dp" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-hdpi\ic_add_white_24dp.png" qualifiers="hdpi" type="drawable"/><file name="ic_launcher" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-hdpi\ic_launcher.png" qualifiers="hdpi" type="drawable"/><file name="ic_menu_more" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-hdpi\ic_menu_more.png" qualifiers="hdpi" type="drawable"/><file name="list" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-hdpi\list.png" qualifiers="hdpi" type="drawable"/><file name="ic_launcher" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-mdpi\ic_launcher.png" qualifiers="mdpi" type="drawable"/><file name="all" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\all.png" qualifiers="xhdpi" type="drawable"/><file name="apps" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\apps.png" qualifiers="xhdpi" type="drawable"/><file name="archive" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\archive.png" qualifiers="xhdpi" type="drawable"/><file name="browser" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\browser.png" qualifiers="xhdpi" type="drawable"/><file name="done" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\done.png" qualifiers="xhdpi" type="drawable"/><file name="downloading" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\downloading.png" qualifiers="xhdpi" type="drawable"/><file name="drawer_shadow" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\drawer_shadow.9.png" qualifiers="xhdpi" type="drawable"/><file name="excel" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\excel.png" qualifiers="xhdpi" type="drawable"/><file name="gigaget" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\gigaget.png" qualifiers="xhdpi" type="drawable"/><file name="grid" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\grid.png" qualifiers="xhdpi" type="drawable"/><file name="ic_add_white_24dp" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\ic_add_white_24dp.png" qualifiers="xhdpi" type="drawable"/><file name="ic_launcher" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\ic_launcher.png" qualifiers="xhdpi" type="drawable"/><file name="ic_menu_more" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\ic_menu_more.png" qualifiers="xhdpi" type="drawable"/><file name="list" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\list.png" qualifiers="xhdpi" type="drawable"/><file name="music" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\music.png" qualifiers="xhdpi" type="drawable"/><file name="pdf" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\pdf.png" qualifiers="xhdpi" type="drawable"/><file name="powerpoint" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\powerpoint.png" qualifiers="xhdpi" type="drawable"/><file name="settings" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\settings.png" qualifiers="xhdpi" type="drawable"/><file name="unknown" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\unknown.png" qualifiers="xhdpi" type="drawable"/><file name="video" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\video.png" qualifiers="xhdpi" type="drawable"/><file name="word" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xhdpi\word.png" qualifiers="xhdpi" type="drawable"/><file name="gigaget" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xxhdpi\gigaget.png" qualifiers="xxhdpi" type="drawable"/><file name="grid" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xxhdpi\grid.png" qualifiers="xxhdpi" type="drawable"/><file name="ic_add_white_24dp" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xxhdpi\ic_add_white_24dp.png" qualifiers="xxhdpi" type="drawable"/><file name="ic_launcher" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xxhdpi\ic_launcher.png" qualifiers="xxhdpi" type="drawable"/><file name="list" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\drawable-xxhdpi\list.png" qualifiers="xxhdpi" type="drawable"/><file name="activity_main" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\layout\activity_main.xml" qualifiers="" type="layout"/><file name="detail" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\layout\detail.xml" qualifiers="" type="layout"/><file name="dialog_url" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\layout\dialog_url.xml" qualifiers="" type="layout"/><file name="missions" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\layout\missions.xml" qualifiers="" type="layout"/><file name="mission_item_linear" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\layout\mission_item_linear.xml" qualifiers="" type="layout"/><file name="main" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\menu\main.xml" qualifiers="" type="menu"/><file name="mission" path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\menu\mission.xml" qualifiers="" type="menu"/><file path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\values\arrays.xml" qualifiers=""><string-array name="drawer_items">
+		<item>All</item>
+		<item>Downloading</item>
+		<item>Done</item>
+		<item>-</item>
+		<item>Embedded Browser</item>
+		<item>Settings</item>
+	</string-array><string-array name="drawer_icons" translatable="false">
+		<item>all</item>
+		<item>downloading</item>
+		<item>done</item>
+		<item>null</item>
+		<item>browser</item>
+		<item>settings</item>
+	</string-array></file><file path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\values\colors.xml" qualifiers=""><color name="cyan_dark">#00ACC1</color><color name="bluegray">#607D8B</color><color name="orange_dark">#EF6C00</color><color name="brown_dark">#5D4037</color><color name="light_gray">#EFEFEF</color><color name="green_dark">#388E3C</color><color name="bluegray_dark">#546E7A</color><color name="green">#4CAF50</color><color name="blue">#2979FF</color><color name="brown">#795548</color><color name="middle_gray">#E0E0E0</color><color name="orange">#FF9800</color><color name="gray">#616161</color><color name="cyan">#00BCD4</color><color name="blue_dark">#1565C0</color><color name="white">#FFFFFF</color></file><file path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\values\dimens.xml" qualifiers=""><dimen name="activity_vertical_margin">16dp</dimen><dimen name="activity_horizontal_margin">16dp</dimen></file><file path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\values\strings.xml" qualifiers=""><string name="msg_fetch_filename">Fetch file name</string><string name="msg_url">Download URL</string><string name="add">New mission</string><string name="settings">Settings</string><string name="msg_close">Close</string><string name="total_size">Total size</string><string name="msg_exists">文件已经存在</string><string name="msg_server_unsupported">Server unsupported</string><string name="delete">Delete</string><string name="msg_error">Error</string><string name="pause">Pause</string><string name="msg_no_video">Oops, no video detected</string><string name="blocks_count">Blocks count</string><string name="url">Url</string><string name="speed">Speed</string><string name="threads_count">Threads count</string><string name="about">About</string><string name="hello_world">Hello world!</string><string name="msg_threads">Threads</string><string name="msg_name">File name</string><string name="detector">Video detector</string><string name="app_name">GigaGet</string><string name="switch_mode">Switch between list and grid</string><string name="path">Path</string><string name="create_date">Created on</string><string name="finish">Okay</string><string name="start">Start</string><string name="view">View</string><string name="msg_running_detail">Click for details</string><string name="downloaded_size">Downloaded size</string><string name="msg_enter_url">Enter url here</string><string name="msg_running">GigaGet is running</string><string name="browser">Simple Browser</string><string name="msg_url_malform">url链接有误</string></file><file path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style><style name="Theme_App_Base" parent="android:Theme.Light">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@color/light_gray</item>
+		<item name="android:windowContentOverlay">@null</item>
+	</style><style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style></file><file path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\values-sw720dp-land\dimens.xml" qualifiers="sw720dp-land"><dimen name="activity_horizontal_margin">128dp</dimen></file><file path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\values-v11\styles.xml" qualifiers="v11"><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style></file><file path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\values-v14\styles.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style></file><file path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\values-zh-rCN\arrays.xml" qualifiers="zh-rCN"><string-array name="drawer_items">
+		<item>全部</item>
+		<item>正在下载</item>
+		<item>已完成</item>
+		<item>-</item>
+		<item>内置浏览器</item>
+		<item>设置</item>
+	</string-array></file><file path="E:\DemoPlace\MyApplication\zz_Thread\src\main\res\values-zh-rCN\strings.xml" qualifiers="zh-rCN"><string name="msg_running_detail">单击查看详情</string><string name="settings">设置</string><string name="total_size">总大小</string><string name="delete">删除</string><string name="msg_running">GigaGet 正在运行</string><string name="msg_close">关闭</string><string name="about">关于</string><string name="create_date">创建于</string><string name="msg_threads">线程</string><string name="msg_exists">文件已存在</string><string name="msg_url">下载地址</string><string name="msg_url_malform">URL格式错误或网络不可用</string><string name="finish">完成</string><string name="pause">暂停</string><string name="downloaded_size">已完成</string><string name="speed">速度</string><string name="msg_enter_url">请在此输入地址</string><string name="add">添加任务</string><string name="msg_error">出错</string><string name="path">路径</string><string name="blocks_count">区块数</string><string name="msg_server_unsupported">服务器不支持</string><string name="view">查看</string><string name="msg_name">文件名</string><string name="msg_fetch_filename">获取文件名</string><string name="detector">视频嗅探器</string><string name="browser">简易浏览器</string><string name="url">源地址</string><string name="msg_no_video">目测找不到视频诶</string><string name="switch_mode">切换列表和表格视图</string><string name="start">开始</string><string name="threads_count">线程数</string></file></source><source path="E:\DemoPlace\MyApplication\zz_Thread\build\generated\res\rs\debug"/><source path="E:\DemoPlace\MyApplication\zz_Thread\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug"><source path="E:\DemoPlace\MyApplication\zz_Thread\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="GridLayout"><attr name="orientation"><enum name="horizontal" value="0"/><enum name="vertical" value="1"/></attr><attr format="integer" name="rowCount"/><attr format="integer" name="columnCount"/><attr format="boolean" name="useDefaultMargins"/><attr name="alignmentMode"><enum name="alignBounds" value="0"/><enum name="alignMargins" value="1"/></attr><attr format="boolean" name="rowOrderPreserved"/><attr format="boolean" name="columnOrderPreserved"/></declare-styleable><declare-styleable name="GridLayout_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_margin"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginRight"/><attr name="android:layout_marginBottom"/><attr format="integer" name="layout_row"/><attr format="integer" min="1" name="layout_rowSpan"/><attr format="integer" name="layout_column"/><attr format="integer" min="1" name="layout_columnSpan"/><attr name="layout_gravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable></configuration></mergedItems></merger>

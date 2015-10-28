@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <attr name="myTextContext" format="string" />
+  <attr name="myTextSize"  format="dimension" />
+  <declare-styleable name="MyTextView" >
+    <attr name="myTextContext"/>
+    <attr name="myTextSize" />
+  </declare-styleable>
+    
+</resources>

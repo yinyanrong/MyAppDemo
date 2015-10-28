@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/DemoPlace/MyApplication/zz_Thread/src/main/res/values-zh-rCN/arrays.xml -->
+    <eat-comment/>
+    <string-array name="drawer_items">
+		<item>全部</item>
+		<item>正在下载</item>
+		<item>已完成</item>
+		<item>-</item>
+		<item>内置浏览器</item>
+		<item>设置</item>
+	</string-array>
+    <!-- From: file:/E:/DemoPlace/MyApplication/zz_Thread/src/main/res/values-zh-rCN/strings.xml -->
+    <eat-comment/>
+    <string name="about">关于</string>
+    <string name="add">添加任务</string>
+    <string name="blocks_count">区块数</string>
+    <string name="browser">简易浏览器</string>
+    <string name="create_date">创建于</string>
+    <string name="delete">删除</string>
+    <string name="detector">视频嗅探器</string>
+    <string name="downloaded_size">已完成</string>
+    <string name="finish">完成</string>
+    <string name="msg_close">关闭</string>
+    <string name="msg_enter_url">请在此输入地址</string>
+    <string name="msg_error">出错</string>
+    <string name="msg_exists">文件已存在</string>
+    <string name="msg_fetch_filename">获取文件名</string>
+    <string name="msg_name">文件名</string>
+    <string name="msg_no_video">目测找不到视频诶</string>
+    <string name="msg_running">GigaGet 正在运行</string>
+    <string name="msg_running_detail">单击查看详情</string>
+    <string name="msg_server_unsupported">服务器不支持</string>
+    <string name="msg_threads">线程</string>
+    <string name="msg_url">下载地址</string>
+    <string name="msg_url_malform">URL格式错误或网络不可用</string>
+    <string name="path">路径</string>
+    <string name="pause">暂停</string>
+    <string name="settings">设置</string>
+    <string name="speed">速度</string>
+    <string name="start">开始</string>
+    <string name="switch_mode">切换列表和表格视图</string>
+    <string name="threads_count">线程数</string>
+    <string name="total_size">总大小</string>
+    <string name="url">源地址</string>
+    <string name="view">查看</string>
+</resources>
