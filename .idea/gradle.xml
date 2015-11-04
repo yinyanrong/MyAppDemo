@@ -12,11 +12,9 @@
             <option value="$PROJECT_DIR$/MyCustomView" />
             <option value="$PROJECT_DIR$/OkHttpSample" />
             <option value="$PROJECT_DIR$/RecyclerviewDemo" />
+            <option value="$PROJECT_DIR$/TabSwitch" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/dateSliderdevelop" />
-            <option value="$PROJECT_DIR$/zz_Thread" />
-            <option value="$PROJECT_DIR$/内存泄露示例" />
-            <option value="$PROJECT_DIR$/程序退出demo" />
           </set>
         </option>
       </GradleProjectSettings>

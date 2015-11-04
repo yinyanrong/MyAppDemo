@@ -6,12 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/MyCustomView/MyCustomView.iml" filepath="$PROJECT_DIR$/MyCustomView/MyCustomView.iml" />
       <module fileurl="file://$PROJECT_DIR$/OkHttpSample/OkHttpSample.iml" filepath="$PROJECT_DIR$/OkHttpSample/OkHttpSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/RecyclerviewDemo/RecyclerviewDemo.iml" filepath="$PROJECT_DIR$/RecyclerviewDemo/RecyclerviewDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TabSwitch/TabSwitch.iml" filepath="$PROJECT_DIR$/TabSwitch/TabSwitch.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/dateSliderdevelop/dateSliderdevelop.iml" filepath="$PROJECT_DIR$/dateSliderdevelop/dateSliderdevelop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jpushdemo/jpushdemo.iml" filepath="$PROJECT_DIR$/jpushdemo/jpushdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zz_Thread/zz_Thread.iml" filepath="$PROJECT_DIR$/zz_Thread/zz_Thread.iml" />
-      <module fileurl="file://$PROJECT_DIR$/内存泄露示例/内存泄露示例.iml" filepath="$PROJECT_DIR$/内存泄露示例/内存泄露示例.iml" />
-      <module fileurl="file://$PROJECT_DIR$/程序退出demo/程序退出demo.iml" filepath="$PROJECT_DIR$/程序退出demo/程序退出demo.iml" />
     </modules>
   </component>
 </project>
