@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/TabSwitch/TabSwitch.iml" filepath="$PROJECT_DIR$/TabSwitch/TabSwitch.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/dateSliderdevelop/dateSliderdevelop.iml" filepath="$PROJECT_DIR$/dateSliderdevelop/dateSliderdevelop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/为老马自定义控件/为老马自定义控件.iml" filepath="$PROJECT_DIR$/为老马自定义控件/为老马自定义控件.iml" />
     </modules>
   </component>
 </project>

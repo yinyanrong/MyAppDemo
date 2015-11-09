@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="left_text_clolr"   format="color"/>
+    <attr name="left_text_size"    format="dimension"/>
+    <declare-styleable name="CalendarCustomMade"  >
+        <attr name="left_text_clolr"/>
+        <attr name="left_text_size"/>
+    </declare-styleable>
+</resources>
