@@ -11,7 +11,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
-    <com.example.user.myapplication.CalendarCustomMade
+    <com.example.user.myapplication.customview.ColorRectBar
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:left_text_size="16sp"
